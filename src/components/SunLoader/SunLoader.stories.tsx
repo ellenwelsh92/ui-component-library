@@ -5,7 +5,7 @@ const meta = {
   title: 'Components/SunLoader',
   component: SunLoader,
   tags: ['autodocs'],
-  args: { size: 'large', inline: true, color: '#ffffff', label: 'Loading' },
+  args: { size: 'large', inline: true, label: 'Loading' },
   argTypes: {
     size: { control: 'select', options: ['small', 'medium', 'large'] },
     color: { control: 'color' },
@@ -13,7 +13,7 @@ const meta = {
   },
   decorators: [
     (Story) => (
-      <div className="flex h-screen min-w-64 items-center justify-center rounded-xl bg-slate-900 p-8">
+      <div className="flex h-screen min-w-64 items-center justify-center rounded-xl bg-studio-cream p-8 dark:bg-studio-ground">
         <Story />
       </div>
     ),
@@ -35,7 +35,7 @@ export const ViewportCentered: Story = {
 export const Inline: Story = {
   args: { size: 'medium', color: 'currentColor' },
   render: (args) => (
-    <div className="flex items-center gap-3 text-white">
+    <div className="flex items-center gap-3 text-studio-ink dark:text-studio-cream">
       <SunLoader {...args} />
       <span>Loading your content…</span>
     </div>

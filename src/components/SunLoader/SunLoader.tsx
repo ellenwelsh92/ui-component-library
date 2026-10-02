@@ -58,7 +58,7 @@ const rings = [
 
 export function SunLoader({
   size = 'large',
-  color = '#ffffff',
+  color,
   inline = false,
   label = 'Loading',
   className,
@@ -73,6 +73,7 @@ export function SunLoader({
       {...props}
       className={clsx(
         'inline-flex shrink-0 items-center justify-center align-middle',
+        color === undefined && 'text-studio-ink dark:text-studio-cream',
         sizes[size],
         inline || size !== 'large' ? 'relative' : 'fixed top-1/2 left-1/2 -translate-1/2',
         className,
