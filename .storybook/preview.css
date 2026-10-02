@@ -1,0 +1,9 @@
+.docs-story {
+  background-color: var(--color-studio-cream);
+  color: var(--color-studio-ground);
+}
+
+.dark .docs-story {
+  background-color: var(--color-studio-ground);
+  color: var(--color-studio-cream);
+}

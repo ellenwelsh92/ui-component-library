@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+@source '../';
+@source '../components/Accordion';
+
+@import './animations.css';
+@import './theme.css';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    margin: 0;
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+    @apply bg-studio-cream text-studio-ground antialiased;
+    @apply dark:bg-studio-ground dark:text-studio-cream;
+  }
+}

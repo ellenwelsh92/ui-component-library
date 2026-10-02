@@ -1,0 +1,26 @@
+@theme {
+  --color-studio-cream: #f5f2f0;
+  --color-studio-text-secondary: rgb(245 242 240 / 75%);
+
+  --color-studio-ground: #0f0e0c;
+  --color-studio-ink: #474541;
+
+  --color-status-error: #eb3c33;
+  --color-status-success: #2cb84c;
+  --color-status-warning: #bc7b20;
+  --color-status-info: #1190c6;
+  --color-status-neutral: var(--color-studio-ink);
+}
+
+:root {
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
+  --color-status-error: #ff453a;
+  --color-status-success: #2cb84c;
+  --color-status-warning: #ff9500;
+  --color-status-info: #38bdf8;
+  --color-status-neutral: var(--color-studio-cream);
+}

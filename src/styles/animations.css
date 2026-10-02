@@ -1,0 +1,21 @@
+@theme {
+  --animate-sun-inner: sun-inner 1.5s cubic-bezier(0.35, 0.4, 0.4, 1) infinite;
+  --animate-sun-middle: sun-middle 1.5s cubic-bezier(0.35, 0.4, 0.4, 1) infinite;
+  --animate-sun-outer: sun-outer 1.5s cubic-bezier(0.35, 0.4, 0.4, 1) infinite;
+
+  @keyframes sun-inner {
+    to {
+      transform: rotate(135deg);
+    }
+  }
+  @keyframes sun-middle {
+    to {
+      transform: rotate(90deg);
+    }
+  }
+  @keyframes sun-outer {
+    to {
+      transform: rotate(45deg);
+    }
+  }
+}
