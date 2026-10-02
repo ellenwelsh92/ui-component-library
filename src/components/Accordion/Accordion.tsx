@@ -62,10 +62,13 @@ export const AccordionItem = ({
     >
       <div className="min-h-0 overflow-hidden">
         <div
-          className={clsx('text-sm leading-relaxed text-studio-text-secondary', {
-            'pt-4 pb-0': openUpwards,
-            'pb-4 ': !openUpwards,
-          })}
+          className={clsx(
+            'text-sm leading-relaxed text-studio-ink/75 dark:text-studio-text-secondary',
+            {
+              'pt-4 pb-0': openUpwards,
+              'pb-4 ': !openUpwards,
+            },
+          )}
         >
           {answer}
         </div>
@@ -78,7 +81,7 @@ export const AccordionItem = ({
   return (
     <div
       className={clsx(
-        'w-full border-studio-cream/15',
+        'w-full border-studio-ink/15 dark:border-studio-cream/15',
         { 'border-b': !openUpwards, 'border-t': openUpwards },
         className,
       )}
@@ -94,9 +97,9 @@ export const AccordionItem = ({
           aria-controls={panelId}
           onClick={toggle}
           className={clsx(
-            'flex w-full items-center gap-3 rounded-lg py-4 text-left text-sm text-studio-cream',
-            'cursor-pointer enabled:hover:text-studio-text-secondary disabled:cursor-not-allowed disabled:opacity-50',
-            'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-studio-cream/50',
+            'flex w-full items-center gap-3 rounded-lg py-4 text-left text-sm text-studio-ink dark:text-studio-cream',
+            'cursor-pointer enabled:hover:text-studio-ink/75 dark:enabled:hover:text-studio-text-secondary disabled:cursor-not-allowed disabled:opacity-50',
+            'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-studio-ink/50 dark:focus-visible:outline-studio-cream/50',
             reverse && 'flex-row-reverse',
           )}
         >
