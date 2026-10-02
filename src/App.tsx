@@ -6,7 +6,7 @@ export default function App() {
 
   return (
     <main className="flex min-h-screen items-center justify-center p-6">
-      <section className="w-full max-w-xl rounded-2xl border border-slate-200 bg-white p-8 shadow-sm sm:p-12">
+      <section className="w-full max-w-xl rounded-2xl border border-slate-200 bg-studio-light p-8 shadow-sm sm:p-12">
         <p className="text-sm font-semibold uppercase tracking-widest text-indigo-600">Component playground</p>
         <h1 className="mt-4 text-4xl font-bold tracking-tight">Ready to build.</h1>
         <p className="mt-4 leading-7 text-slate-600">

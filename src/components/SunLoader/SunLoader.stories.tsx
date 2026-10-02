@@ -13,7 +13,7 @@ const meta = {
   },
   decorators: [
     (Story) => (
-      <div className="flex h-screen min-w-64 items-center justify-center rounded-xl bg-studio-cream p-8 dark:bg-studio-ground">
+      <div className="flex h-screen min-w-64 items-center justify-center rounded-xl bg-studio-light p-8 dark:bg-studio-ground">
         <Story />
       </div>
     ),
